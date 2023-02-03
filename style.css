@@ -60,12 +60,12 @@ body{
 }
 
 .quote-area i:first-child{
-    margin: 3px 10px 0 0;
+    margin: 3px 3px 0 0;
 }
 .quote-area i:last-child{
     display: flex;
     align-items: flex-end;
-    margin:0 0 3px 10px;
+    margin:0 0 3px 3px;
     
 }
 
