@@ -1,0 +1,154 @@
+/* Import Poppins Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+
+/* RESET CODE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* PROJECT STYLING */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: darkslategrey;
+}
+
+.wrapper {
+    width: 700px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.wrapper header {
+    color: darkslategrey;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper header .header-span{
+    color: goldenrod;
+}
+
+.wrapper .content {
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+.content .quote-area {
+    display: flex;
+    justify-content: center;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.quote-area i{
+    font-size: 20px;
+    /* margin: 5px; */
+    color: darkslategrey;
+}
+
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin:0 0 3px 10px;
+    
+}
+
+.quote-area .quote {
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    text-align: center;
+}
+
+.content .author {
+    /* font-size: 20px; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.author span:first-child {
+    margin-right: 5px;
+}
+
+.wrapper .buttons {
+    border-top: 1px solid #ccc;
+}
+
+.buttons {
+    background-color: darkslategrey;
+    padding: 20px;
+    border-radius: 15px;
+}
+.buttons .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+    padding: 2px;
+}
+
+.features ul {
+    display: flex;
+}
+
+.features ul li {
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    color: darkslategrey;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.features ul li:hover {
+    background-color: goldenrod;
+    color: darkslategrey;
+    border: 2px solid transparent;
+}
+
+.features button {
+    border: none;
+    cursor: pointer;
+    background-color: darkslategrey;
+    outline: none;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+.features button:hover {
+    color: white;
+    border: 2px solid goldenrod;
+}
+
+
+button.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
