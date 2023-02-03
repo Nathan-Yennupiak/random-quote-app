@@ -13,7 +13,7 @@ API_URL = "https://api.quotable.io/random"
 //random Quote function
 async function randomQuote() {
     quoteBtn.classList.add("loading") //Add loading class to button
-    quoteBtn.innerText = "Loading Quote..."; //
+    quoteBtn.innerText = "Loading..."; //
     const res = await fetch(API_URL); //Fetch API URL
     const { content, author } = await res.json() //Destructure content and author from response
     quoteText.innerText = content; //Set quote text to content
@@ -40,26 +40,6 @@ soundBtn.addEventListener("click", () => {
 });
 
 // Copy Quote Function
-// copyBtn.addEventListener("click", () => {
-//   let message = quoteText.innerText;
-//   navigator.clipboard.writeText(message);
-//   alert("Quote Copied to Clipboard");
-// });
-// copyBtn.addEventListener("click", () => {
-//     let message = quoteText.innerText;
-//     if (navigator.clipboard) {
-//       navigator.clipboard.writeText(message)
-//         .then(() => {
-//           alert("Quote Copied to Clipboard");
-//         })
-//         .catch(() => {
-//           console.error("Failed to copy text to clipboard");
-//         });
-//     } else {
-//       console.error("Clipboard API is not supported in this browser");
-//     }
-//   });
-
   copyBtn.addEventListener("click", () => {
     let message = quoteText.innerText + " - " + authorName.innerText;
     if (navigator.clipboard) {

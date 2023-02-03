@@ -153,11 +153,11 @@ button.loading {
 button.loading::after {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: 2px solid white;
     border-color: white transparent white transparent;
     animation: loading 1s linear infinite;
-    margin-left: 10px;
+    margin-left: 3px;
 }
