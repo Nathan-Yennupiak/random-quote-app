@@ -22,7 +22,7 @@ body{
 }
 
 .wrapper {
-    max-width: 600px;
+    width: 700px;
     background-color: white;
     border-radius: 15px;
     padding: 30px;
@@ -58,17 +58,17 @@ body{
 }
 
 .quote-area i:first-child{
-    margin: 3px 3px 0 0;
+    margin: 3px 10px 0 0;
 }
 .quote-area i:last-child{
     display: flex;
     align-items: flex-end;
-    margin:0 0 3px 3px;
+    margin:0 0 3px 10px;
     
 }
 
 .quote-area .quote {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(44, 44, 44);
     text-align: center;
 }
@@ -78,7 +78,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: monospace;
 }
 
@@ -92,7 +92,7 @@ body{
 
 .buttons {
     background-color: darkslategrey;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
 }
 .buttons .features {
@@ -100,7 +100,6 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 10px 0 10px 0;
-    padding: 10px;
 }
 
 .features ul {
