@@ -90,21 +90,49 @@ twitterBtn.addEventListener("click", () => {
 tippy(".sound", {
     content: "Read Quote",
     arrow: true,
+    trigger: 'click',
+  hideOnClick: false,
+  onShow(instance) {
+    setTimeout(() => {
+      instance.hide();
+    }, 2000);
+  }
 })
 
 tippy(".copy", {
     content: "Copy Quote",
     arrow: true,
+    trigger: 'click',
+  hideOnClick: false,
+  onShow(instance) {
+    setTimeout(() => {
+      instance.hide();
+    }, 2000);
+  }
 })
 
 tippy(".twitter", {
     content: "Tweet Quote",
     arrow: true,
+    trigger: 'click',
+  hideOnClick: false,
+  onShow(instance) {
+    setTimeout(() => {
+      instance.hide();
+    }, 2000);
+  }
 })
 
 tippy(".new-quote", {
     content: "Get New Quote",
     arrow: true,
+    trigger: 'click',
+  hideOnClick: false,
+  onShow(instance) {
+    setTimeout(() => {
+      instance.hide();
+    }, 2000);
+  }
 
 })
 
