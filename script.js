@@ -48,16 +48,15 @@ soundBtn.addEventListener("click", () => {
 copyBtn.addEventListener("click", () => {
     let message = quoteText.innerText;
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(message);
-      alert("Quote Copied to Clipboard");
+      navigator.clipboard.writeText(message)
+        .then(() => {
+          alert("Quote Copied to Clipboard");
+        })
+        .catch(() => {
+          console.error("Failed to copy text to clipboard");
+        });
     } else {
-      let textarea = document.createElement("textarea");
-      textarea.value = message;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      textarea.remove();
-      alert("Quote Copied to Clipboard");
+      console.error("Clipboard API is not supported in this browser");
     }
   });
   
