@@ -40,11 +40,27 @@ soundBtn.addEventListener("click", () => {
 });
 
 // Copy Quote Function
+// copyBtn.addEventListener("click", () => {
+//   let message = quoteText.innerText;
+//   navigator.clipboard.writeText(message);
+//   alert("Quote Copied to Clipboard");
+// });
 copyBtn.addEventListener("click", () => {
-  let message = quoteText.innerText;
-  navigator.clipboard.writeText(message);
-  alert("Quote Copied to Clipboard");
-});
+    let message = quoteText.innerText;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(message);
+      alert("Quote Copied to Clipboard");
+    } else {
+      let textarea = document.createElement("textarea");
+      textarea.value = message;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+      alert("Quote Copied to Clipboard");
+    }
+  });
+  
 
 // Tweet Quote Function
 twitterBtn.addEventListener("click", () => {
