@@ -45,12 +45,27 @@ soundBtn.addEventListener("click", () => {
 //   navigator.clipboard.writeText(message);
 //   alert("Quote Copied to Clipboard");
 // });
-copyBtn.addEventListener("click", () => {
-    let message = quoteText.innerText;
+// copyBtn.addEventListener("click", () => {
+//     let message = quoteText.innerText;
+//     if (navigator.clipboard) {
+//       navigator.clipboard.writeText(message)
+//         .then(() => {
+//           alert("Quote Copied to Clipboard");
+//         })
+//         .catch(() => {
+//           console.error("Failed to copy text to clipboard");
+//         });
+//     } else {
+//       console.error("Clipboard API is not supported in this browser");
+//     }
+//   });
+
+  copyBtn.addEventListener("click", () => {
+    let message = quoteText.innerText + " - " + authorText.innerText;
     if (navigator.clipboard) {
       navigator.clipboard.writeText(message)
         .then(() => {
-          alert("Quote Copied to Clipboard");
+          alert("Quote and Author Copied to Clipboard");
         })
         .catch(() => {
           console.error("Failed to copy text to clipboard");
@@ -59,6 +74,7 @@ copyBtn.addEventListener("click", () => {
       console.error("Clipboard API is not supported in this browser");
     }
   });
+  
   
 
 // Tweet Quote Function
