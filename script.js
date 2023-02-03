@@ -61,7 +61,7 @@ soundBtn.addEventListener("click", () => {
 //   });
 
   copyBtn.addEventListener("click", () => {
-    let message = quoteText.innerText + " - " + authorText.innerText;
+    let message = quoteText.innerText + " - " + authorName.innerText;
     if (navigator.clipboard) {
       navigator.clipboard.writeText(message)
         .then(() => {
