@@ -150,3 +150,15 @@ button.loading {
     opacity: 0.6;
     pointer-events: none;
 }
+
+button.loading::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-color: white transparent white transparent;
+    animation: loading 1s linear infinite;
+    margin-left: 10px;
+}
