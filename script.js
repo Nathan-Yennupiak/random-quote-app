@@ -95,7 +95,7 @@ tippy(".sound", {
   onShow(instance) {
     setTimeout(() => {
       instance.hide();
-    }, 2000);
+    }, 1000);
   }
 })
 
@@ -103,12 +103,12 @@ tippy(".copy", {
     content: "Copy Quote",
     arrow: true,
     trigger: 'click',
-  hideOnClick: false,
-  onShow(instance) {
-    setTimeout(() => {
-      instance.hide();
-    }, 2000);
-  }
+    hideOnClick: false,
+    onShow(instance) {
+      setTimeout(() => {
+        instance.hide();
+      }, 1000);
+    }
 })
 
 tippy(".twitter", {
@@ -119,7 +119,7 @@ tippy(".twitter", {
   onShow(instance) {
     setTimeout(() => {
       instance.hide();
-    }, 2000);
+    }, 1000);
   }
 })
 
@@ -131,7 +131,7 @@ tippy(".new-quote", {
   onShow(instance) {
     setTimeout(() => {
       instance.hide();
-    }, 2000);
+    }, 1000);
   }
 
 })
